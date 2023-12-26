@@ -1,0 +1,227 @@
+html,
+body{
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+h1,h2,h3,b{
+    margin: 0;
+    padding: 0;
+}
+
+svg{
+    width: 25px;
+    height: auto;
+}
+
+
+a{
+    display: flex;
+    gap: 15px;
+    align-items: center;
+    text-decoration: none;
+    color: white;
+
+}
+
+img{
+    height: 50px;
+    width: 50px;
+    border-radius: 50%;
+}
+
+label,
+button,
+select,
+summary,
+[type=radio],
+[type=submit],
+[type=checkbox] {
+    cursor: pointer;
+}
+
+button{
+    padding: 0;
+    margin: 0;
+}
+
+/* grid container */
+.container{
+    display: grid;
+    grid-template-columns: 1fr 4fr;
+    height: 100%;
+}
+
+/* dashboard content */
+.sidebar{
+    grid-column: 1 / 2;
+    grid-row:  1/ 5;
+    height: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    row-gap: 3vw;
+    padding: 1vw;
+    background-color: orange;
+    border-right: 15px solid black;
+
+}
+
+.dashboard{
+    display: flex;
+    flex-direction: column;
+    flex-shrink: 1;
+    row-gap: 1vw;
+}
+
+/* Header content */
+.header{
+    grid-column: 2 / 3;
+    padding: 1vw 2vw;
+    display: flex;
+    flex-direction: column;
+    row-gap: 2vw;
+    background-color: chocolate;
+    color: white;
+}
+
+.headerTop{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+    gap: 12vw;
+}
+
+.headerTopLeft{
+    display: flex;
+    flex-grow: 1;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: flex-start;
+    gap: 1vw;
+}
+
+.headerTopLeft input{
+    flex-grow: 1;
+    border-radius: 10px;
+}
+
+.headerTopRight{
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    gap: 1vw;
+    flex-shrink: 1;
+}
+
+.headerBottom{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.headerBottomLeft{
+    display: flex;
+    align-items: center;
+    gap: 1vw;
+}
+
+.headerBottomRight{
+    display: flex;
+    gap: 1vw;
+}
+
+.headerBottom div button{
+    background-color: orange;
+    border-radius: 20px;
+    padding: 10px 30px;
+}
+
+.content{
+    display: grid;
+    height: 100%;
+    grid-template-columns: 3fr 1fr;
+    padding: 1vw 2vw;
+    gap: 1vw;
+    background-color: whitesmoke;
+}
+
+.mainContent{
+    grid-column: 1 / 2;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 1vw;
+    grid-template-rows: max-content;
+}
+
+.mainContent h3{
+    grid-column: 1 / 3;
+    grid-row: 1 / 1;
+}
+
+.card{
+    background-color: darkgoldenrod;
+    padding: 10px;
+    border-left: 10px solid orangered;
+    border-radius: 30px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+.card img{
+    height: auto;
+    width: 80%;
+    border-radius: 30px;
+    padding: 15px;
+
+}
+
+.sideContent{
+    display: flex;
+    flex-direction: column;
+    row-gap: 1vw;
+}
+
+.announcementSection,
+.trendingSection{
+    background-color:chocolate;
+    border-radius: 30px;
+    border-left: 10px solid black;
+    display: flex;
+    flex-direction: column;
+    padding: 1vw;
+}
+
+.smallFont{
+    font-size: small;
+}
+
+.trendingBar,
+.announcementBar{
+    display: flex;
+    flex-direction: column;
+    row-gap: 1vw;
+}
+
+.trending{
+    display: flex;
+    column-gap: 1vw;
+    border-bottom: 2px dashed white;
+    border-radius: 20px;
+    padding-bottom: 15px;
+}
+
+.announcement{
+    border-bottom: 2px dashed white;
+    border-radius: 20px;
+    padding-bottom: 15px;
+
+}
